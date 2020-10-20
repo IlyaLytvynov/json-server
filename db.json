@@ -1,4 +1,13 @@
 {
+  "trash": [
+    {
+      "id": 1
+    },
+    {
+      "test": "sadasd",
+      "id": 2
+    }
+  ],
   "advertisments": [
     {
       "title": "Time to Share: 6 for $3.99*",
