@@ -52,7 +52,7 @@
         e.preventDefault();
         console.log(fileInput.files);
         const formData = new FormData(form);
-        fetch('http://localhost:4000/comments', {
+        fetch('https://boring-fe.herokuapp.com/comments', {
           method: 'POST',
           body: formData,
         })
