@@ -27,7 +27,7 @@ const fileFilter = (req, file, cb) => {
 
 server.use(jsonServer.bodyParser);
 server.use(
-  multer({ storage: fileStorage, fileFilter: fileFilter }).single('avatar')
+  multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
 );
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
@@ -50,6 +50,14 @@ server.post('/comments', (req, res, next) => {
     req.body.avatarUrl = rest.join('/');
   } else {
     req.body.avatarUrl = 'images/default-avatar.png';
+  }
+
+  next();
+});
+server.post('/movies', (req, res, next) => {
+  if (req.file && req.file.path) {
+    const [_, ...rest] = req.file.path.split('/');
+    req.body.preview = rest.join('/');
   }
 
   next();
