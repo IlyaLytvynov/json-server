@@ -63,6 +63,15 @@ server.post('/movies', (req, res, next) => {
   next();
 });
 
+server.post('/advertisments', (req, res, next) => {
+  if (req.file && req.file.path) {
+    const [_, ...rest] = req.file.path.split('/');
+    req.body.img = rest.join('/');
+  }
+
+  next();
+});
+
 // Use default router
 server.use(router);
 const port = process.env.PORT || 4000;
