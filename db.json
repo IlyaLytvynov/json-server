@@ -257,5 +257,21 @@
         ]
       }
     ]
-  }
+  },
+  "posts": [
+    {
+      "title": "TEST POST",
+      "content": "UserGems is growing! We are looking for a Senior Software Engineer and a Software Engineer to join our team. If you know anyone that would be interested, please send them our way. More details about the roles: https://www.usergems.com/careers This is a Remote position. Our headquarter is based in San Francisco and our European office in Salzburg (Austria), but most of our team is remote.",
+      "avatarUrl": "images/2020-12-29T19:45:49.715Z-santa-icon.png",
+      "author": "Max Doe",
+      "id": 1
+    },
+    {
+      "title": "TEST POST 2",
+      "content": "UserGems is growing! We are looking for a Senior Software Engineer and a Software Engineer to join our team. If you know anyone that would be interested, please send them our way. More details about the roles: https://www.usergems.com/careers This is a Remote position. Our headquarter is based in San Francisco and our European office in Salzburg (Austria), but most of our team is remote.",
+      "avatarUrl": "images/2020-12-29T19:45:49.715Z-santa-icon.png",
+      "author": "John Doe",
+      "id": 2
+    }
+  ]
 }
