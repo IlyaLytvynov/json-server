@@ -269,5 +269,29 @@
       "author": "John Doe",
       "id": 2
     }
+  ],
+  "feed": [
+    {
+      "message": "Hello",
+      "author": "John Doe",
+      "stats": {
+        "likes": "10",
+        "dislikes": "4"
+      },
+      "createdAt": 1609079053695,
+      "id": 0,
+      "imageUrl": "https://boring-fe.herokuapp.com/images/2020-12-29T19:45:49.715Z-santa-icon.png"
+    },
+    {
+      "message": "Hello",
+      "author": "Jain Doe",
+      "stats": {
+        "likes": "10",
+        "dislikes": "4"
+      },
+      "createdAt": 1609078953695,
+      "id": 1,
+      "imageUrl": "https://boring-fe.herokuapp.com/images/2020-12-29T19:45:49.715Z-santa-icon.png"
+    }
   ]
 }
